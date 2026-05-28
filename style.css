@@ -1,0 +1,288 @@
+.stApp{
+    background:
+        radial-gradient(circle at top left, #1e293b 0%, transparent 30%),
+        radial-gradient(circle at bottom right, #312e81 0%, transparent 30%),
+        linear-gradient(
+            135deg,
+            #020617,
+            #0f172a,
+            #111827
+        );
+
+    min-height:100vh;
+
+    font-family:'Poppins',sans-serif;
+
+    color:#f8fafc;
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.card{
+
+    background: rgba(15, 23, 42, 0.92);
+
+    backdrop-filter: blur(10px);
+
+    padding:32px;
+
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.45),
+        0 0 20px rgba(99,102,241,0.15);
+
+    margin-bottom:28px;
+
+    transition:0.3s ease;
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,0.55),
+        0 0 25px rgba(59,130,246,0.25);
+}
+
+/* ========================================
+   HEADINGS
+======================================== */
+
+h1,h2,h3{
+
+    color:#ffffff;
+
+    margin-top:0;
+
+    font-weight:800;
+
+    letter-spacing:-0.02em;
+}
+
+h1{
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+    background: linear-gradient(
+        90deg,
+        #60a5fa,
+        #818cf8,
+        #c084fc
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+h2{
+
+    font-size:2rem;
+}
+
+h3{
+
+    font-size:1.4rem;
+}
+
+/* ========================================
+   TEXT
+======================================== */
+
+p,
+label,
+span,
+div{
+
+    color:#e2e8f0;
+}
+
+/* ========================================
+   DATAFRAME
+======================================== */
+
+[data-testid="stDataFrame"]{
+
+    border-radius:14px;
+
+    overflow:hidden;
+}
+
+/* ========================================
+   METRICS
+======================================== */
+
+div[data-testid="metric-container"]{
+
+    background: linear-gradient(
+        135deg,
+        rgba(59,130,246,0.18),
+        rgba(99,102,241,0.15)
+    );
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    padding:18px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ========================================
+   SIDEBAR
+======================================== */
+
+section[data-testid="stSidebar"]{
+
+    background: rgba(2,6,23,0.95);
+
+    border-right:1px solid rgba(255,255,255,0.08);
+}
+
+/* ========================================
+   INPUT BOXES
+======================================== */
+
+.stSelectbox div[data-baseweb="select"],
+.stNumberInput input,
+.stSlider{
+
+    background-color: rgba(255,255,255,0.05) !important;
+
+    color:#ffffff !important;
+
+    border-radius:12px !important;
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.stButton button{
+
+    width:100%;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    transition:0.3s ease;
+}
+
+.stButton button:hover{
+
+    transform:scale(1.02);
+
+    background: linear-gradient(
+        135deg,
+        #1d4ed8,
+        #6d28d9
+    );
+
+    box-shadow:0 8px 20px rgba(59,130,246,0.4);
+}
+
+/* ========================================
+   PREDICTION BOX
+======================================== */
+
+.prediction-box{
+
+    background: linear-gradient(
+        135deg,
+        #22c55e,
+        #16a34a
+    );
+
+    padding:28px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:white;
+
+    margin-top:25px;
+
+    box-shadow:
+        0 10px 30px rgba(34,197,94,0.35);
+}
+
+/* ========================================
+   TABLES
+======================================== */
+
+table{
+
+    color:white !important;
+}
+
+th{
+
+    background-color: rgba(59,130,246,0.2) !important;
+
+    color:white !important;
+}
+
+td{
+
+    color:#f1f5f9 !important;
+}
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4f46e5;
+
+    border-radius:10px;
+}
+
+/* ========================================
+   SUCCESS & ERROR
+======================================== */
+
+.stSuccess,
+.stError{
+
+    border-radius:14px;
+}
